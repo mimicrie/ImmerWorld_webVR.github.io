@@ -1,7 +1,19 @@
-<!DOCTYPE html>
+<!-- comment-->
+<!-- alles was in den a-assets drin ist, muss auch im File assets/ drin sein, die id gibt an wies heisst, src was es ist..src="# name lädt dann das file -->
 <html>
-<body>
-	Hello world, my name is immerworldMimi.
-</body>
-
+  <head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <video id="Final_bottom" autoplay loop="true" src="assets/Final_bottom.mp4" webkit-playsinline>
+        <video id="Final_front" autoplay loop="true" src="assets/Final_front.mp4" webkit-playsinline>
+       </a-assets>
+      
+           <a-video src="#Final_bottom" width="16" height="16" position="0 8 -10"></a-video>
+           <a-video src="#Final_front" width="16" height="16" position="-10 8 0"></a-video>
+    </a-scene>
+  </body>
 </html>
